@@ -56,8 +56,6 @@ static const NSString * kPlacesIdKeyPath = @"place_id";
   return [self.rawData valueForKeyPath:[kPlaceNameKeyPath copy]];
 }
 
-
-
 @end
 
 NS_ASSUME_NONNULL_END

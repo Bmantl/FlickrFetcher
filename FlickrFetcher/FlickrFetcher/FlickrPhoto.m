@@ -103,9 +103,6 @@ static const NSString *kPhotoOriginalSecretKeyPath = @"originalsecret";
   return [self.rawData objectForKey:[kPhotoOriginalSecretKeyPath copy]];
 }
 
-
-
-
 @end
 
 NS_ASSUME_NONNULL_END

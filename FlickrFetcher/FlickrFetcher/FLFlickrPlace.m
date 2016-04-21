@@ -1,40 +1,47 @@
 // Copyright (c) 2016 Lightricks. All rights reserved.
 // Created by Boris Talesnik.
 
-#import "FlickrPlace.h"
+#import "FLFlickrPlace.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FlickrPlace()
+@interface FLFlickrPlace()
 
+// Object with Serialized Data from the Flickr API
 @property (nonatomic, strong) NSDictionary * rawData;
 
 @end
 
-@implementation FlickrPlace
+@implementation FLFlickrPlace
 
-#pragma mark - Constants
+#pragma mark -
+#pragma mark Constants
+#pragma mark -
 
-static const NSString * kPlacesResultsKeyPath = @"places.place";
-static const NSString * kPlaceNameKeyPath = @"_content";
-static const NSString * kPlacesIdKeyPath = @"place_id";
+static NSString * const kPlacesResultsKeyPath = @"places.place";
+static NSString * const kPlaceNameKeyPath = @"_content";
+static NSString * const kPlacesIdKeyPath = @"place_id";
 
-#pragma mark - FlickrPlace mass production
+#pragma mark -
+#pragma mark FlickrPlace mass production
+#pragma mark -
 
 + (NSArray *)flickrPlacesFromRawData:(NSData *)rawData {
   NSDictionary *convertedData = [NSJSONSerialization JSONObjectWithData:rawData
                                                                 options:NSJSONReadingMutableLeaves
                                                                   error:NULL];
-  NSArray *rawPlaces = [convertedData valueForKeyPath:[kPlacesResultsKeyPath copy]] ;
+  NSArray *rawPlaces = [convertedData valueForKeyPath:kPlacesResultsKeyPath] ;
   NSMutableArray *places = [[NSMutableArray alloc] init];
   for (NSDictionary * rawPlace in rawPlaces) {
-    [places addObject:[[FlickrPlace alloc] initWithRawData:rawPlace]];
+    [places addObject:[[FLFlickrPlace alloc] initWithRawData:rawPlace]];
   }
   
   return [places copy];
 }
 
-#pragma mark - initialization
+#pragma mark -
+#pragma mark Initialization
+#pragma mark -
 
 - (instancetype)initWithRawData:(NSDictionary *)rawData {
   self = [super init];
@@ -46,14 +53,16 @@ static const NSString * kPlacesIdKeyPath = @"place_id";
   return self;
 }
 
-#pragma mark - Parsing Methods
+#pragma mark -
+#pragma mark Parsing Methods
+#pragma mark -
 
 - (NSString *)placeId {
-  return [self.rawData valueForKeyPath:[kPlacesIdKeyPath copy]];
+  return [self.rawData valueForKeyPath:kPlacesIdKeyPath];
 }
 
 - (NSString *)name {
-  return [self.rawData valueForKeyPath:[kPlaceNameKeyPath copy]];
+  return [self.rawData valueForKeyPath:kPlaceNameKeyPath];
 }
 
 @end

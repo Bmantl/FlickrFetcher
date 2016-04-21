@@ -1,21 +1,17 @@
 // Copyright (c) 2016 Lightricks. All rights reserved.
 // Created by Boris Talesnik.
 
-#import "FlickrPhoto.h"
-#import "FlickrPlace.h"
-
-//! Project version number for FlickrFetcher.
-FOUNDATION_EXPORT double FlickrFetcherVersionNumber;
-
-//! Project version string for FlickrFetcher.
-FOUNDATION_EXPORT const unsigned char FlickrFetcherVersionString[];
+#import "FLFlickrPhoto.h"
+#import "FLFlickrPlace.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// Object for creating Flickr URLs according to the Flickr API
-@interface FlickrURLMaker : NSObject
+@interface FLFlickrURLMaker : NSObject
 
-#pragma mark - photo formats
+#pragma mark -
+#pragma mark Photo formats
+#pragma mark -
 
 typedef enum {
   FlickrPhotoFormatSquare = 1,    // thumbnail
@@ -31,10 +27,10 @@ typedef enum {
 
 /// Retruns a URL for the photos of a given \c flickrPlace
 /// And \c maxResults
-- (NSURL *)URLForPhotosInPlace:(FlickrPlace *)flickrPlace maxResults:(NSUInteger)maxResults;
+- (NSURL *)URLForPhotosInPlace:(FLFlickrPlace *)flickrPlace maxResults:(NSUInteger)maxResults;
 
 /// Retruns a URL for a photo for a given \c flickrPhoto according to a \c format
-- (NSURL *)URLForPhoto:(FlickrPhoto *)flickrPhoto format:(FlickrPhotoFormat)format;
+- (NSURL *)URLForPhoto:(FLFlickrPhoto *)flickrPhoto format:(FlickrPhotoFormat)format;
 
 @end
 

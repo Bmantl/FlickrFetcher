@@ -7,27 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A146F73E1CC3B43100464028 /* FlickrFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A146F73D1CC3B43100464028 /* FlickrFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A146F74C1CC3B47400464028 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A146F7451CC3B47400464028 /* FlickrFetcher.m */; };
-		A146F74D1CC3B47400464028 /* FlickrPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = A146F7461CC3B47400464028 /* FlickrPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A146F74E1CC3B47400464028 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A146F7471CC3B47400464028 /* FlickrPhoto.m */; };
-		A146F74F1CC3B47400464028 /* FlickrPlace.h in Headers */ = {isa = PBXBuildFile; fileRef = A146F7481CC3B47400464028 /* FlickrPlace.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A146F7501CC3B47400464028 /* FlickrPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = A146F7491CC3B47400464028 /* FlickrPlace.m */; };
-		A146F7511CC3B47400464028 /* FlickrURLMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = A146F74A1CC3B47400464028 /* FlickrURLMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A146F7521CC3B47400464028 /* FlickrURLMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = A146F74B1CC3B47400464028 /* FlickrURLMaker.m */; };
+		A10E73F11CC9284D006D0E9F /* FLFlickrFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A10E73E91CC9284D006D0E9F /* FLFlickrFetcher.h */; };
+		A10E73F21CC9284D006D0E9F /* FLFlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A10E73EA1CC9284D006D0E9F /* FLFlickrFetcher.m */; };
+		A10E73F31CC9284D006D0E9F /* FLFlickrPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = A10E73EB1CC9284D006D0E9F /* FLFlickrPhoto.h */; };
+		A10E73F41CC9284D006D0E9F /* FLFlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A10E73EC1CC9284D006D0E9F /* FLFlickrPhoto.m */; };
+		A10E73F51CC9284D006D0E9F /* FLFlickrPlace.h in Headers */ = {isa = PBXBuildFile; fileRef = A10E73ED1CC9284D006D0E9F /* FLFlickrPlace.h */; };
+		A10E73F61CC9284D006D0E9F /* FLFlickrPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = A10E73EE1CC9284D006D0E9F /* FLFlickrPlace.m */; };
+		A10E73F71CC9284D006D0E9F /* FLFlickrURLMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = A10E73EF1CC9284D006D0E9F /* FLFlickrURLMaker.h */; };
+		A10E73F81CC9284D006D0E9F /* FLFlickrURLMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = A10E73F01CC9284D006D0E9F /* FLFlickrURLMaker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A10E73E71CC92452006D0E9F /* FlickrFetcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlickrFetcher-Prefix.pch"; sourceTree = "<group>"; };
+		A10E73E91CC9284D006D0E9F /* FLFlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLFlickrFetcher.h; sourceTree = "<group>"; };
+		A10E73EA1CC9284D006D0E9F /* FLFlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLFlickrFetcher.m; sourceTree = "<group>"; };
+		A10E73EB1CC9284D006D0E9F /* FLFlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLFlickrPhoto.h; sourceTree = "<group>"; };
+		A10E73EC1CC9284D006D0E9F /* FLFlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLFlickrPhoto.m; sourceTree = "<group>"; };
+		A10E73ED1CC9284D006D0E9F /* FLFlickrPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLFlickrPlace.h; sourceTree = "<group>"; };
+		A10E73EE1CC9284D006D0E9F /* FLFlickrPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLFlickrPlace.m; sourceTree = "<group>"; };
+		A10E73EF1CC9284D006D0E9F /* FLFlickrURLMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLFlickrURLMaker.h; sourceTree = "<group>"; };
+		A10E73F01CC9284D006D0E9F /* FLFlickrURLMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLFlickrURLMaker.m; sourceTree = "<group>"; };
 		A146F73A1CC3B43100464028 /* FlickrFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlickrFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A146F73D1CC3B43100464028 /* FlickrFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
 		A146F73F1CC3B43100464028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A146F7451CC3B47400464028 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
-		A146F7461CC3B47400464028 /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
-		A146F7471CC3B47400464028 /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhoto.m; sourceTree = "<group>"; };
-		A146F7481CC3B47400464028 /* FlickrPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPlace.h; sourceTree = "<group>"; };
-		A146F7491CC3B47400464028 /* FlickrPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPlace.m; sourceTree = "<group>"; };
-		A146F74A1CC3B47400464028 /* FlickrURLMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrURLMaker.h; sourceTree = "<group>"; };
-		A146F74B1CC3B47400464028 /* FlickrURLMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrURLMaker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +61,16 @@
 		A146F73C1CC3B43100464028 /* FlickrFetcher */ = {
 			isa = PBXGroup;
 			children = (
-				A146F73D1CC3B43100464028 /* FlickrFetcher.h */,
-				A146F7451CC3B47400464028 /* FlickrFetcher.m */,
-				A146F7461CC3B47400464028 /* FlickrPhoto.h */,
-				A146F7471CC3B47400464028 /* FlickrPhoto.m */,
-				A146F7481CC3B47400464028 /* FlickrPlace.h */,
-				A146F7491CC3B47400464028 /* FlickrPlace.m */,
-				A146F74A1CC3B47400464028 /* FlickrURLMaker.h */,
-				A146F74B1CC3B47400464028 /* FlickrURLMaker.m */,
+				A10E73E91CC9284D006D0E9F /* FLFlickrFetcher.h */,
+				A10E73EA1CC9284D006D0E9F /* FLFlickrFetcher.m */,
+				A10E73EB1CC9284D006D0E9F /* FLFlickrPhoto.h */,
+				A10E73EC1CC9284D006D0E9F /* FLFlickrPhoto.m */,
+				A10E73ED1CC9284D006D0E9F /* FLFlickrPlace.h */,
+				A10E73EE1CC9284D006D0E9F /* FLFlickrPlace.m */,
+				A10E73EF1CC9284D006D0E9F /* FLFlickrURLMaker.h */,
+				A10E73F01CC9284D006D0E9F /* FLFlickrURLMaker.m */,
 				A146F73F1CC3B43100464028 /* Info.plist */,
+				A10E73E71CC92452006D0E9F /* FlickrFetcher-Prefix.pch */,
 			);
 			path = FlickrFetcher;
 			sourceTree = "<group>";
@@ -80,10 +82,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A146F74F1CC3B47400464028 /* FlickrPlace.h in Headers */,
-				A146F74D1CC3B47400464028 /* FlickrPhoto.h in Headers */,
-				A146F7511CC3B47400464028 /* FlickrURLMaker.h in Headers */,
-				A146F73E1CC3B43100464028 /* FlickrFetcher.h in Headers */,
+				A10E73F71CC9284D006D0E9F /* FLFlickrURLMaker.h in Headers */,
+				A10E73F31CC9284D006D0E9F /* FLFlickrPhoto.h in Headers */,
+				A10E73F51CC9284D006D0E9F /* FLFlickrPlace.h in Headers */,
+				A10E73F11CC9284D006D0E9F /* FLFlickrFetcher.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,10 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A146F7501CC3B47400464028 /* FlickrPlace.m in Sources */,
-				A146F7521CC3B47400464028 /* FlickrURLMaker.m in Sources */,
-				A146F74C1CC3B47400464028 /* FlickrFetcher.m in Sources */,
-				A146F74E1CC3B47400464028 /* FlickrPhoto.m in Sources */,
+				A10E73F21CC9284D006D0E9F /* FLFlickrFetcher.m in Sources */,
+				A10E73F41CC9284D006D0E9F /* FLFlickrPhoto.m in Sources */,
+				A10E73F81CC9284D006D0E9F /* FLFlickrURLMaker.m in Sources */,
+				A10E73F61CC9284D006D0E9F /* FLFlickrPlace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +263,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${PROJECT_DIR}/FlickrFetcher/FlickrFetcher-Prefix.pch";
 				INFOPLIST_FILE = FlickrFetcher/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -277,6 +281,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${PROJECT_DIR}/FlickrFetcher/FlickrFetcher-Prefix.pch";
 				INFOPLIST_FILE = FlickrFetcher/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -305,6 +311,7 @@
 				A146F7441CC3B43100464028 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
